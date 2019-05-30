@@ -8,7 +8,6 @@ body {
   text-align: center;
   padding: 0.5em;
   margin: 0;
-  text-transform: uppercase;
   height: 100vh;
 }
 
@@ -35,8 +34,8 @@ main{
 }
 
 .top{
-  max-width: 8%;
-  max-height:8%;
+  max-width: 4em;
+  max-height:4em;
   animation: spin 5s linear infinite;
 }
 
@@ -53,15 +52,23 @@ main{
 
 .title:hover{
   text-shadow:10px 10px #A0C1B9, 0px -10px #08415C;
-
 }
 
 .top:hover{
   animation:spin 8s linear infinite;
 }
+
+.about:hover{
+  background-color: rgba(255,255,255,.75);
+}
 @keyframes spin {
   from{transform: rotate(0deg)}
   to{transform: rotate(360deg)}
+}
+.category{
+  font-family:helvetica;
+  position:relative;
+  top:-.5em;
 }
 
 .veg:hover{
