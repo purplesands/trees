@@ -4,7 +4,8 @@
   "description": "a fun website",
   "main": "app.js",
   "dependencies": {
-    "animejs": "^3.0.1"
+    "animejs": "^3.0.1",
+    "jquery": "^3.4.1"
   },
   "devDependencies": {},
   "scripts": {

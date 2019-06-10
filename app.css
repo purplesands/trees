@@ -2,20 +2,6 @@
   box-sizing: border-box;
 }
 
-header {
-  position:absolute;
-  padding: 0.5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  width: calc(100% - 3em);
-  top: 0.5em;
-  background: rgba(249, 244, 244, .4);
-  border:1px solid rgba(25, 43, 194, 0.8);
-
-}
-
 body {
   margin-top:150px;
   width: calc(100% - 2em);
@@ -32,13 +18,30 @@ body {
 
 
 main{
-  position:static;
+  position:relative;
   display:flex;
   text-align: center;
   padding: 0.5em;
   margin: 0;
   height: 100vh;
 }
+header {
+  z-index:100;
+  position:fixed;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 3em);
+  top: 0.5em;
+  background: rgba(249, 244, 244, .4);
+  border:1px solid rgba(25, 43, 194, 0.8);
+  height:8.9em;
+  transition: transform 0.3s ease, top 0.3s ease;
+  font-family:'helvetica'
+
+}
+
 
 .top{
   max-width: 4em;
@@ -93,6 +96,13 @@ main{
   text-decoration: overline;
   /* animation: shadow 8s linear infinite alternate; */
 
+}
+.big{
+  font-size:4em;
+}
+.slant{
+  transform:skew(-30deg, 5deg);
+  font-size:3em;
 }
 
 @keyframes shadow {
@@ -225,6 +235,16 @@ strong{
   background-size:5% ;
   background-position: 5em;
   background-repeat:space;
+  margin-bottom:1em;
+}
+.cow{
+  max-width: 100%;
+  max-height:100%;
+}
+.field{
+  max-width:100%;
+  position:relative;
+  margin-bottom:-50px;
 }
 
 .goop {
