@@ -9,4 +9,7 @@ $(document).ready(function(){
                     $(".head").css({'background-color':'transparent', 'opacity':'1', 'transform': 'scale(1, 1)','top':'0.5em'});
                 }
             });
+            $('.douglas').click(function() {
+console.log('hi')            });
+
         });
