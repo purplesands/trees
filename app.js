@@ -9,7 +9,34 @@ $(document).ready(function(){
                     $(".head").css({'background-color':'transparent', 'opacity':'1', 'transform': 'scale(1, 1)','top':'0.5em'});
                 }
             });
-            $('.douglas').click(function() {
-console.log('hi')            });
+            $('.hoke').hover(function () {
+                $("#hoke").show();
+                $("#sel").hide();
+            },function () {
+                $("#hoke").hide();
+                $("#sel").show();
+
+            });
+            $('.lemontown').hover(function () {
+                $("#lemontown").show();
+                $("#sel").hide();
+            },function () {
+                $("#lemontown").hide();
+                $("#sel").show();
+            });
+            $('.tetrotis').hover(function () {
+                $("#tetrotis").show();
+                $("#sel").hide();
+            },function () {
+                $("#tetrotis").hide();
+                $("#sel").show();
+            });
+            // $('.lemonV').click(function () {
+            //   console.log('hi')
+            //     $("#lemonYT").show();
+            //     $("#sel").hide();
+            //
+            // });
+
 
         });
